@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>Arquivo 07 — Chiefe no Tomo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <main>
+    <section id="intro" class="screen intro-screen">
+      <p class="eyebrow">DEPARTAMENTO DE INVESTIGAÇÃO • 1937</p>
+      <h1>ARQUIVO <span>07</span></h1>
+      <p class="subtitle">Há nomes que não deveriam ser pronunciados.</p>
+      <form id="answer-form">
+        <label for="answer">INSIRA A RESPOSTA PARA ABRIR O DOSSIÊ</label>
+        <input id="answer" name="answer" autocomplete="off" placeholder="Digite sua resposta..." required>
+        <button type="submit">ABRIR INVESTIGAÇÃO</button>
+      </form>
+      <p class="small-note">CONFIDENCIAL — ACESSO REGISTRADO</p>
+    </section>
+
+    <section id="casefile" class="screen case-screen hidden" aria-live="polite">
+      <header class="case-header">
+        <div><p class="eyebrow">CASO Nº 07-1937</p><h2>AS CONEXÕES DE <span>CHIEFE NO TOMO</span></h2></div>
+        <div class="stamp">CONFIDENCIAL</div>
+      </header>
+      <p class="case-intro">Um nome aparece em todos os lugares. Ninguém admite conhecê-lo. Todos têm algo a esconder.</p>
+      <div class="board-wrap">
+        <div class="board" id="board">
+          <svg class="threads" viewBox="0 0 1000 570" preserveAspectRatio="none" aria-hidden="true">
+            <line x1="500" y1="280" x2="190" y2="100"/><line x1="500" y1="280" x2="800" y2="100"/>
+            <line x1="500" y1="280" x2="150" y2="300"/><line x1="500" y1="280" x2="850" y2="310"/>
+            <line x1="500" y1="280" x2="300" y2="480"/><line x1="500" y1="280" x2="720" y2="480"/>
+            <line x1="190" y1="100" x2="150" y2="300"/><line x1="800" y1="100" x2="850" y2="310"/>
+            <line x1="150" y1="300" x2="300" y2="480"/><line x1="850" y1="310" x2="720" y2="480"/>
+          </svg>
+          <article class="node central"><span class="pin">●</span><h3>CHIEFE<br>NO TOMO</h3><p>O NOME POR TRÁS DE TUDO</p></article>
+          <article class="node n1"><span class="pin">●</span><h3>Vittorio Bellini</h3><p>CHEFE DA FAMÍLIA</p><small>Último visto no clube Orquídea</small></article>
+          <article class="node n2"><span class="pin">●</span><h3>Clara Moretti</h3><p>CANTORA • TESTEMUNHA</p><small>Recebeu um envelope às 23h</small></article>
+          <article class="node n3"><span class="pin">●</span><h3>Insp. Raul Ferraz</h3><p>POLÍCIA • SUSPEITO</p><small>O relatório original desapareceu</small></article>
+          <article class="node n4"><span class="pin">●</span><h3>Samuel “Dente” Costa</h3><p>COBRADOR</p><small>Conhece as rotas do porto</small></article>
+          <article class="node n5"><span class="pin">●</span><h3>Dr. Augusto Vale</h3><p>MÉDICO • CONFIDENTE</p><small>Atendeu alguém naquela noite</small></article>
+          <article class="node n6"><span class="pin">●</span><h3>Elisa Navarro</h3><p>JORNALISTA</p><small>Guardou uma fotografia</small></article>
+          <div class="photo-label">FOTOGRAFIAS • FIOS • SUSPEITAS</div>
+        </div>
+      </div>
+      <div class="clue-strip"><span>PISTA 01</span> O recibo do clube foi rasgado ao meio. <span class="redacted">O RESTO ESTÁ DESAPARECIDO</span></div>
+      <p class="countdown" id="countdown">A VERDADE ESTÁ SE APROXIMANDO...</p>
+    </section>
+
+    <section id="ending" class="screen ending-screen hidden" aria-live="assertive">
+      <div class="impact" id="impact" aria-hidden="true"></div>
+      <div class="blood-layer" id="blood-layer" aria-hidden="true"></div>
+      <div class="credits">
+        <p class="eyebrow">UM FILME DE MISTÉRIO</p>
+        <h2>O CASO <span>PERMANECE ABERTO</span></h2>
+        <div class="credit-list">
+          <p><span>DIREÇÃO</span><strong>MATHAUZ</strong></p>
+          <p><span>MÚSICA</span><strong>MATHAUZ</strong></p>
+          <p><span>ARTE</span><strong>MATHAUZ</strong></p>
+          <p><span>CINEMA</span><strong>MATHAUZ</strong></p>
+          <p><span>IDEIA ORIGINAL</span><strong>MATHAUZ</strong></p>
+        </div>
+        <p class="the-end">FIM... POR ENQUANTO.</p>
+        <button id="replay" type="button">REABRIR O DOSSIÊ</button>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
