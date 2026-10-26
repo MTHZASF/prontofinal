@@ -54,7 +54,7 @@ function showEnding() {
 }
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  if (answer.value.trim().toLowerCase() !== "minha senha") {
+  if (answer.value.trim().toLowerCase() !== "chiefe") {
   alert("Resposta incorreta.");
   return;
   clearTimers();
